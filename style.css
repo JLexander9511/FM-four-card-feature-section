@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+
+.content{
+    padding: 92px 40px;
+    margin: 0px;
+}
+
+.heading{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.heading__frstheading{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    font-size: 24px;
+    margin: 0px;
+}
+
+.heading__scndheading{
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    font-size: 24px;
+}
+
+.heading__text{
+    margin: 0px;
+    margin-top: 25px;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 78px;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    padding: 28px 30px 30px 30px;
+    box-shadow: 0px 10px 20px hsl(220, 4%, 84%);
+    height: 220px;
+}
+
+.cards-container div:nth-of-type(1){
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.horizontal-cards div:nth-of-type(1){
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.horizontal-cards div:nth-of-type(2){
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.cards-container div:nth-of-type(3){
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card__heading{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 9px;
+}
+
+.card__text{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    line-height: 20px;
+}
+
+.card__imagefrm{
+    margin-right: 28px;
+    margin-bottom: 25px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.card__image{
+    width: 58px;
+    height: 58px;
+}
+
+footer{
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+@media only screen and (min-width: 768px){
+    .content{
+        padding: 90px 170px;
+        margin: 0px;
+    }
+
+    .heading__frstheading{
+        font-size: 36px;
+    }
+
+    .heading__scndheading{
+        font-size: 36px;
+    }
+
+    .heading__text{
+        margin: 28px auto;
+        margin-bottom: 0px;
+        font-size: 16px;
+        width: 550px;
+    }
+
+    .cards-container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 68px;
+        justify-content: center;
+    }
+
+    .horizontal-cards div{
+        margin: 0px 30px;
+        margin-bottom: 30px;
+        width: 320px;
+    }
+
+    .card{
+        height: 220px;
+        width: 352px;
+        align-self: center;
+        
+    }
+
+    .card:hover{
+        transition: all 0.2s linear;
+        transform: scale(1.05);
+    }
+}
